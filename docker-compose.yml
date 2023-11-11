@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+
+  ubuntu_22.04:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile-ubuntu_22.04
+    volumes:
+      - .:/root/wkhtmltopdf_binary_gem
